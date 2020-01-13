@@ -59,11 +59,11 @@ namespace KSPAdvancedFlyByWire
 
         public static bool CheckXInputSupport()
         {
-#if LINUX || OSX
-            return false;
-#else
-            return true;
-#endif
+            return Application.platform == RuntimePlatform.WindowsEditor ||
+                   Application.platform == RuntimePlatform.WindowsPlayer ||
+                   Application.platform == RuntimePlatform.WSAPlayerX64 ||
+                   Application.platform == RuntimePlatform.WSAPlayerX86 ||
+                   Application.platform == RuntimePlatform.WSAPlayerARM;
         }
 
         public static bool CheckSDLSupport()
@@ -73,11 +73,11 @@ namespace KSPAdvancedFlyByWire
 
         public static bool CheckSharpDXSupport()
         {
-#if LINUX || OSX
-            return false;
-#else
-            return true;
-#endif
+            return Application.platform == RuntimePlatform.WindowsEditor ||
+                   Application.platform == RuntimePlatform.WindowsPlayer ||
+                   Application.platform == RuntimePlatform.WSAPlayerX64 ||
+                   Application.platform == RuntimePlatform.WSAPlayerX86 ||
+                   Application.platform == RuntimePlatform.WSAPlayerARM;
         }
 
     }

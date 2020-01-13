@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Rafael\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\Rafael\.Rider2019.3\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Rafael\.Rider2019.3\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\Rafael\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Rafael\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_ksp-advanced-flybywire.912591423.00" t="ExcludeRecursive" />
+    <e p="F:\Stuff1tb\GitHub\Games\zzOther\ksp-advanced-flybywire" t="IncludeFlat">
+      <e p="AdvancedFlyByWireNeo.version" t="Include" />
+      <e p="AFBW" t="IncludeRecursive">
+        <e p="AdvancedFlyByWire.cs" t="Include" />
+        <e p="AdvancedFlyByWireNeo.csproj" t="IncludeRecursive" />
+        <e p="AdvancedFlyByWireNeo.dll.config" t="Include" />
+        <e p="AdvancedFlyByWireNeo.tt" t="Include" />
+        <e p="AssemblyVersion.cs" t="Include" />
+        <e p="AssemblyVersion.tt" t="Include" />
+        <e p="AxisConfiguration.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Bitset.cs" t="Include" />
+        <e p="CameraController.cs" t="Include" />
+        <e p="Configuration.cs" t="Include" />
+        <e p="ControllerConfigurationWindow.cs" t="Include" />
+        <e p="ControllerPreset.cs" t="Include" />
+        <e p="DefaultControllerPresets.cs" t="Include" />
+        <e p="DirectXController.cs" t="Include" />
+        <e p="EVAController.cs" t="Include" />
+        <e p="EvaluationCurves.cs" t="Include" />
+        <e p="FlightManager.cs" t="Include" />
+        <e p="FlightProperty.cs" t="Include" />
+        <e p="IController.cs" t="Include" />
+        <e p="InstallChecker.cs" t="Include" />
+        <e p="KeyboardMouseController.cs" t="Include" />
+        <e p="ModSettingsWindow.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="PresetEditorWindow.cs" t="Include" />
+        <e p="PresetEditorWindowNG.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="SDL2.cs" t="Include" />
+        <e p="SDLController.cs" t="Include" />
+        <e p="Stringify.cs" t="Include" />
+        <e p="StringMarshaller.cs" t="Include" />
+        <e p="Templating" t="Include">
+          <e p="VersionParser.ttinclude" t="Include" />
+        </e>
+        <e p="Utility.cs" t="Include" />
+        <e p="WarpController.cs" t="Include" />
+        <e p="XInputController.cs" t="Include" />
+        <e p="XInputDotNetPure.dll.config" t="Include" />
+        <e p="XInputDotNetPure.tt" t="Include" />
+      </e>
+      <e p="buildRelease.bat" t="Include" />
+      <e p="CHANGELOG" t="Include" />
+      <e p="controller_test_tool\ControllerTestTool" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="AxisConfiguration.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Bitset.cs" t="Include" />
+        <e p="ControllerPreset.cs" t="Include" />
+        <e p="ControllerTestTool.csproj" t="IncludeRecursive" />
+        <e p="DefaultControllerPresets.cs" t="Include" />
+        <e p="EvaluationCurves.cs" t="Include" />
+        <e p="Form1.cs" t="Include" />
+        <e p="Form1.Designer.cs" t="Include" />
+        <e p="Form1.resx" t="Include" />
+        <e p="IController.cs" t="Include" />
+        <e p="KeyboardMouseController.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="SDL2.cs" t="Include" />
+        <e p="SDLController.cs" t="Include" />
+        <e p="Stringify.cs" t="Include" />
+        <e p="StringMarshaller.cs" t="Include" />
+        <e p="Utility.cs" t="Include" />
+        <e p="XInputController.cs" t="Include" />
+      </e>
+      <e p="deploy.bat" t="Include" />
+      <e p="jenkins-linux.txt" t="Include" />
+      <e p="jenkins-osx.txt" t="Include" />
+      <e p="jenkins-win.txt" t="Include" />
+      <e p="ksp-advanced-flybywire.sln" t="IncludeFlat" />
+      <e p="LICENSE" t="Include" />
+      <e p="Makefile" t="Include" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="README.md" t="Include" />
+      <e p="Solution Items" t="Include" />
+    </e>
+  </component>
+</project>

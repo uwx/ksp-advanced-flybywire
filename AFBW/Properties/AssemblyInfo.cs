@@ -1,17 +1,18 @@
-﻿using System.Reflection;
-using System.Runtime.CompilerServices;
+﻿using System;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Resources;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("KSPAdvancedFlyByWire")]
+[assembly: AssemblyTitle("AdvancedFlyByWireNeo")]
+[assembly: KSPModFolder("AdvancedFlyByWireNeo")]
 [assembly: AssemblyDescription("Input mod for Kerbal Space Program")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Alexander \"nlight\" Dzhoganov (alexander.dzhoganov@gmail.com)")]
+[assembly: AssemblyCompany("uwx @ github.com/uwx")]
 [assembly: AssemblyProduct("KSPAdvancedFlyByWire")]
-[assembly: AssemblyCopyright("Copyright © Alexander Dzhoganov 2014")]
+[assembly: AssemblyCopyright(@"Copyright © uwx 2020, © Alexander ""nlight"" Dzhoganov 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -34,8 +35,24 @@ using System.Resources;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 //[assembly: AssemblyVersion("1.1.0.28")]
-[assembly: AssemblyFileVersion("1.1.0.0")]
 [assembly: NeutralResourcesLanguageAttribute("")]
 
 [assembly: KSPAssemblyDependency("ClickThroughBlocker", 1, 0)]
 [assembly: KSPAssemblyDependency("ToolbarController", 1, 0)]
+
+// ReSharper disable InconsistentNaming
+public sealed class KSPModFolderAttribute : Attribute
+{
+    public string ModFolderName { get; }
+
+    public KSPModFolderAttribute(string modFolderName)
+    {
+        ModFolderName = modFolderName;
+    }
+}
+
+public static class KSPHelpers
+{
+    public static string GetModFolderName(this Type type)
+        => type.Assembly.GetCustomAttribute<KSPModFolderAttribute>().ModFolderName;
+}

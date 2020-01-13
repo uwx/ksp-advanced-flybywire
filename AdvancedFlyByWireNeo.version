@@ -1,0 +1,20 @@
+{
+  "NAME": "AdvancedFlyByWireNeo",
+  "URL": "https://raw.githubusercontent.com/uwx/ksp-advanced-flybywire/master/ksp-advanced-flybywire.version",
+  "DOWNLOAD": "https://github.com/uwx/ksp-advanced-flybywire/releases",
+  "GITHUB": {
+    "USERNAME": "uwx",
+    "REPOSITORY": "ksp-advanced-flybywire"
+  },
+  "VERSION": {
+    "MAJOR": 2,
+    "MINOR": 1,
+    "PATCH": 8,
+    "BUILD": 3
+  },
+  "KSP_VERSION_MIN": {
+    "MAJOR": 1,
+    "MINOR": 8,
+    "PATCH": 0
+  }
+}

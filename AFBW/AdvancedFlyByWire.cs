@@ -344,8 +344,8 @@ namespace KSPAdvancedFlyByWire
 
 
         //ApplicationLauncherButton ABFWButton = null;
-        const string TOOLBAR_BTN_38 = "ksp-advanced-flybywire/Textures/toolbar_btn_38";
-        const string TOOLBAR_BTN_24 = "ksp-advanced-flybywire/Textures/toolbar_btn";
+        private static readonly string TOOLBAR_BTN_38 = $"{typeof(AdvancedFlyByWire).GetModFolderName()}/Textures/toolbar_btn_38";
+        private static readonly string TOOLBAR_BTN_24 = $"{typeof(AdvancedFlyByWire).GetModFolderName()}/Textures/toolbar_btn";
                                        
         internal const string MODID = "ABFW_NS";
         internal const string MODNAME = "Advanced Fly-By-Wire";

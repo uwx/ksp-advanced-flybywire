@@ -1,7 +1,6 @@
 bin/
 obj/
 obj/x64/Debug/ksp-advanced-flybywire.csproj.FileListAbsolute.txt
-obj/x64/Debug/ksp-advanced-flybywire.csproj.FileListAbsolute.txt
 *.suo
 Assembly-CSharp.dll
 Assembly-CSharp.xml
@@ -12,3 +11,4 @@ ksp2/
 .vs
 *~
 *.dll
+/.idea/.idea.ksp-advanced-flybywire/.idea/workspace.xml

@@ -1,0 +1,10 @@
+<#@ template hostspecific="true" language="C#" #>
+<#@ output extension=".dll.config" #>
+<#@ include file="Templating\VersionParser.ttinclude" #>
+<#
+WriteLine($@"
+<configuration>
+    <dllmap dll=""XInputInterface"" target=""GameData\{updateData.Name}\XInputInterface.dll"" os=""windows"" />
+</configuration>
+".Trim());
+#>
