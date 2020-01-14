@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Reflection;
 using System.Xml.Serialization;
 using UnityEngine;
 using KSP.UI.Screens;
@@ -29,9 +31,10 @@ namespace KSPAdvancedFlyByWire
         public bool m_UsePrecisionModeFactor = false;
         public float m_PrecisionModeFactor = 0.5f;
         public bool m_IgnoreFlightCtrlState = true;
-        public bool m_UseOnPreInsteadOfOnFlyByWire = false;
+        public bool m_UseOnPreInsteadOfOnFlyByWire = AppDomain.CurrentDomain.GetAssemblies()
+            .Any(e => e.GetCustomAttribute<AssemblyTitleAttribute>()?.Title == "AtmosphereAutopilot");
 
-        public bool m_ThrottleOverride = false;        
+        public bool m_ThrottleOverride = false;
 
         public bool m_MaxMoveSpeedAlways = false;
 

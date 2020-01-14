@@ -36,6 +36,7 @@ using System.Resources;
 
 [assembly: KSPAssemblyDependency("ClickThroughBlocker", 1, 0)]
 [assembly: KSPAssemblyDependency("ToolbarController", 1, 0)]
+[assembly: KSPAssemblyDependency("AtmosphereAutopilot", 1, 5, 16)]
 
 // ReSharper disable InconsistentNaming
 public sealed class KSPModFolderAttribute : Attribute
