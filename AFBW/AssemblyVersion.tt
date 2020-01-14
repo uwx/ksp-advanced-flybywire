@@ -2,6 +2,7 @@
 <#@ output extension=".cs" #>
 <#@ include file="Templating\VersionParser.ttinclude"#>
 <#
+    var name = updateData?.Name ?? "AdvancedFlyByWireNeo";
     var versionData = updateData?.Version;
 	var version = versionData != null ? $"{versionData.Major}.{versionData.Minor}.{versionData.Patch}.{versionData.Build}" : "1.0.0.0";
 #>
@@ -11,6 +12,10 @@
 //
 
 using System.Reflection;
+
+[assembly: AssemblyTitle("<#= name #>")]
+[assembly: KSPModFolder("<#= name #>")]
+[assembly: AssemblyProduct("<#= name #>")]
 
 [assembly: AssemblyVersion("<#= version #>")]
 [assembly: AssemblyFileVersion("<#= version #>")]

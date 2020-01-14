@@ -6,5 +6,9 @@
 
 using System.Reflection;
 
+[assembly: AssemblyTitle("AdvancedFlyByWireNeo")]
+[assembly: KSPModFolder("AdvancedFlyByWireNeo")]
+[assembly: AssemblyProduct("AdvancedFlyByWireNeo")]
+
 [assembly: AssemblyVersion("2.1.8.3")]
 [assembly: AssemblyFileVersion("2.1.8.3")]

@@ -6,12 +6,9 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AdvancedFlyByWireNeo")]
-[assembly: KSPModFolder("AdvancedFlyByWireNeo")]
 [assembly: AssemblyDescription("Input mod for Kerbal Space Program")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("uwx @ github.com/uwx")]
-[assembly: AssemblyProduct("KSPAdvancedFlyByWire")]
 [assembly: AssemblyCopyright(@"Copyright © uwx 2020, © Alexander ""nlight"" Dzhoganov 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

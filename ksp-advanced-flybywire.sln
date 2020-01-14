@@ -9,15 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerTestTool", "contr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9C24FF49-8405-42A1-B729-33A2A2DA7714}"
 	ProjectSection(SolutionItems) = preProject
-		buildRelease.bat = buildRelease.bat
 		CHANGELOG = CHANGELOG
-		deploy.bat = deploy.bat
-		jenkins-linux.txt = jenkins-linux.txt
-		jenkins-osx.txt = jenkins-osx.txt
-		jenkins-win.txt = jenkins-win.txt
 		AdvancedFlyByWireNeo.version = AdvancedFlyByWireNeo.version
-		LICENSE = LICENSE
-		Makefile = Makefile
 		README.md = README.md
 	EndProjectSection
 EndProject

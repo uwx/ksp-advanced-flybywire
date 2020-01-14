@@ -51,7 +51,6 @@
         <e p="XInputDotNetPure.dll.config" t="Include" />
         <e p="XInputDotNetPure.tt" t="Include" />
       </e>
-      <e p="buildRelease.bat" t="Include" />
       <e p="CHANGELOG" t="Include" />
       <e p="controller_test_tool\ControllerTestTool" t="IncludeRecursive">
         <e p="App.config" t="Include" />
@@ -83,13 +82,7 @@
         <e p="Utility.cs" t="Include" />
         <e p="XInputController.cs" t="Include" />
       </e>
-      <e p="deploy.bat" t="Include" />
-      <e p="jenkins-linux.txt" t="Include" />
-      <e p="jenkins-osx.txt" t="Include" />
-      <e p="jenkins-win.txt" t="Include" />
       <e p="ksp-advanced-flybywire.sln" t="IncludeFlat" />
-      <e p="LICENSE" t="Include" />
-      <e p="Makefile" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="README.md" t="Include" />
       <e p="Solution Items" t="Include" />

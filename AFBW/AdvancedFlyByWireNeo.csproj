@@ -109,7 +109,6 @@
       <HintPath>F:\Games\Kerbal Space Program\GameData\000_ClickThroughBlocker\Plugins\ClickThroughBlocker.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml" />
     <Reference Include="ToolbarControl, Version=0.1.9.4, Culture=neutral, PublicKeyToken=null">
@@ -298,8 +297,8 @@
     <Reference Include="UnityEngine.XRModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>F:\Games\Kerbal Space Program\KSP_x64_Data\Managed\UnityEngine.XRModule.dll</HintPath>
     </Reference>
-    <Reference Include="XInputDotNetPure">
-      <HintPath>..\SUPPORTFILES\GameData\ksp-advanced-flybywire\Plugins\XInputDotNetPure.dll</HintPath>
+    <Reference Include="XInputDotNetPure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\GameData\ksp-advanced-flybywire\Plugins\XInputDotNetPure.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -322,15 +321,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="XInputDotNetPure.dll.config">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>XInputDotNetPure.tt</DependentUpon>
     </None>
-    <None Update="AdvancedFlyByWireNeo.dll.config">
+    <None Include="AdvancedFlyByWireNeo.dll.config">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>AdvancedFlyByWireNeo.tt</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
+    <PostBuildEvent>
+      copy /Y "$(TargetDir)\$(TargetName).dll"              "$(SolutionDir)\GameData\AdvancedFlyByWireNeo\Plugins\$(TargetName).dll"
+      copy /Y "$(TargetDir)\$(TargetName).dll.config"       "$(SolutionDir)\GameData\AdvancedFlyByWireNeo\Plugins\$(TargetName).dll.config"
+      copy /Y "$(TargetDir)\$(TargetName).pdb"              "$(SolutionDir)\GameData\AdvancedFlyByWireNeo\Plugins\$(TargetName).pdb"
+      copy /Y "$(TargetDir)\XInputDotNetPure.dll.config"    "$(SolutionDir)\GameData\AdvancedFlyByWireNeo\Plugins\XInputDotNetPure.dll.config"
+
+      copy /Y "$(SolutionDir)\AdvancedFlyByWireNeo.version" "$(SolutionDir)\GameData\AdvancedFlyByWireNeo\AdvancedFlyByWireNeo.version"
+      copy /Y "$(SolutionDir)\CHANGELOG"                    "$(SolutionDir)\GameData\AdvancedFlyByWireNeo\CHANGELOG"
+      copy /Y "$(SolutionDir)\LICENSE.txt"                  "$(SolutionDir)\GameData\AdvancedFlyByWireNeo\LICENSE.txt"
+      copy /Y "$(SolutionDir)\LICENSE.SDL2.txt"             "$(SolutionDir)\GameData\AdvancedFlyByWireNeo\LICENSE.SDL2.txt"
+      copy /Y "$(SolutionDir)\LICENSE.XInputDotNet.txt"     "$(SolutionDir)\GameData\AdvancedFlyByWireNeo\LICENSE.XInputDotNet.txt"
+      copy /Y "$(SolutionDir)\README.md"                    "$(SolutionDir)\GameData\AdvancedFlyByWireNeo\README.md"
+    </PostBuildEvent>
 <!--
     <PostBuildEvent>
     start /D D:\Users\jbb\github\ksp-advanced-flybywire\  /WAIT deploy.bat  $(TargetDir) $(TargetFileName)

@@ -1,0 +1,208 @@
+Changelog
+
+2.1.8.3 (Neo)
+=========
+
+Adopts version 1.8.3.1 of linuxgurugamer's AdvancedFlyByWire
+* Revise internal codebase
+* No longer requires DLLs in KSP root folder
+* Unified DLL for all operating systems
+
+--- Original Changelog ---
+
+1.8.3.1
+	Fixed initialization of variable outside of MonoBehaviour loop
+	Thanks to github user @bhaan for the following:
+		 New Feature: SAS Invert
+		 re-enable nav-ball toggle (speed mode)
+		 Fix Xml Serialization for KSPv1.8
+			Note: This change is not backwards compatible with previous controller presets. Users will have to reconfigure their controllers if these changes are merged. I've tested that an old configuration file will not cause failures for the mod during deserialization, but all the button and axis bindings will be removed.
+
+1.8.3
+	Added InstallChecker
+	Updated for KSP 1.8
+
+1.8.2.1
+	Added code to create data folder (PluginData) if it doesn't exist
+
+1.8.2
+	Fixed controller affecting multiple vessels at a time
+	Fixed AFBW input overrides SAS
+	Fixed AFBW input overrides throttle
+	Moved textures out of PluginData directory
+	Updated AssemblyVersion.tt
+
+1.8.1.1
+	Version bump for 1.5 rebuild
+
+1.8.1
+	Added option to allow throttle to be overridden by joystick or not
+	Fixed loading of settings upon entering the flight scene
+	Fixed saving of:
+		m_MaxMoveSpeedAlways
+		m_UseOnPreInsteadOfOnFlyByWire
+
+1.8.0.5
+	Centered Mod Settings button
+	Fixed RadialIn/RadialOut buttons (are reversed)
+	Fixed Pitch Trim +/- to adjust trim by .1 per click
+
+1.8.0.4
+	Fixed builds
+	Added option to run at max speed always when autorun is enabled
+	Now closes the config window after saving
+	Tweaked size of some buttons
+	Some minor optimizations
+	Now allows deleting 1st preset in list, if more than one exists
+
+1.8.0.3
+	Updated the SDLs library
+	Updated the SDL2 file
+
+		Note:  The SDL update should fix the issues with the non-us keyboards
+
+	Added code to dynamically get the vectorField and floatField offsets
+	Rewrote all event code for EVA events to use new methods of calling
+	Repositioned the GUI.DragWindow() calls to allow full windows to be draggable
+	Added a DragWindow to the Choose Action windows, and fixed the call to properly save the location
+	Added OSX build
+
+
+1.8.0.2
+	Updated name in .version file
+	Updated Jenkins file for Linux build
+	Added missing file for Linux
+
+1.8.0.1
+	Rebuild for bad dll
+	Moved XInputDotNetPure dll into Plugins folder
+
+1.8.0
+	Adopted by LGG
+	Updated for 1.4
+	Added support for the ToolbarController
+	Added support for the ClickthroughBlocker
+	Removed option for Bizzy toobar, now handled by the Toolbarcontroller
+	Added transparancy to large button 
+
+	Changed method of serializing settings
+	Reorganized release directory
+
+v1.7
+- Updated for KSP 1.1
+
+v1.6.1
+- Fixed bad wheel throttle inputs causing unintended rover acceleration
+
+v1.6
+- Updated for KSP 1.0.5
+
+v1.5.1
+- Fixed WSAD controls not working with SAS off (fix by ddaf)
+- Updated bundled Toolbar mod
+
+v1.5
+- Re-implemented SAS override (by ddaf)
+- Fixed the disappearing SDL controller config (by DeamonSix)
+- Fixed a bug where SDL would identify the "centered" position as a button (by badpandabear)
+- A big thank you to all contributors and thanks to all users for waiting so long for this update \o/
+
+v1.4.6
+- This patch brought to you by ddaf
+- Fixed SAS being enabled when it shouldn't
+- The above change also fixed EVA movement related bugs 
+- DirectX11- support has temporarily been disabled until the lag issues are solved
+
+v1.4.5
+- (Windows) Added support for DirectX11, should fix all missing controller issues
+
+v1.4.4
+- Fixed the EVA/ vessel change bug
+- Fixed a bug where staging during time-warp caused vessel parts to disappear
+- Fixed other time-warp related bugs
+
+v1.4.3
+- Fixed the throttle cut/ max throttle issue
+- Better default sensitivity settings
+- Fixed several other bugs
+- Now bundling blizzy's Toolbar 1.7.8
+
+v1.4.2
+- Hopefully fully adapted to 0.90 changes
+- SAS should work fine in all cases now
+- Negative versions of Yaw, Pitch, Roll, X, Y, Z are back
+
+v1.4.1
+- Fixed an issue with the mod breaking SAS
+
+v1.4
+- Support for KSP 0.90
+- Invert option is now per binding instead of per axis (thanks to ddaf!)
+- New feature 'IVA Look Window' (again, thanks to ddaf)
+- Fixed a rare NRE in the GUI
+- KSP-AVC support for the Linux release
+- Due to the config file changes, you will have to re- create your configuration
+
+v1.3
+- EVA!
+- "EVA Jetpack", "EVA Interact", "EVA Jump", "EVA Plant Flag", "EVA AutoRun" have been added
+- Translation controls now work in EVA
+- Camera rotation now works in Map mode and IVA mode
+- Precision mode now works properly
+
+Everything in this update was generously contributed by ddaf (https://github.com/ddaf)
+I am very impressed by the work you did on this, thank you so much!
+
+v1.2.3
+- Fixed the wheel throttle bugs
+- Added a new "Brakes (Hold)" binding, renamed "Brakes" to "Brakes (Toggle)"
+- Fixed an issue where some axis combos wouldn't work
+- New options in controller configuration to set dead-zones from the GUI
+- Added "Quadratic (Inverted)" interpolation option
+- New controller test tool
+- Throttle and wheel throttle now reset to zero when you change vessels
+
+v1.2.2
+- Fixed the input locks bug
+
+v1.2.1
+- Fixed a bug where changing vessels mid-flight would result in AFBW controlling the old vessel
+- Fixed a bug where if KSP's working directory was not configured correctly the mod wouldn't find its config file
+- Merged Vitor Boschi's axis mapping fix
+- Toolbar button now closes the UI if it's already open
+- Added explicit "Save configuration" button to the main screen
+- Fixed input control locks for the new preset editor
+- Support for KSP-AVC
+
+v1.2
+- New preset editor
+- Many small GUI improvements
+- Now using KSP skin by default, option to revert to the old one
+- Updated toolbar to 1.7.7
+
+v1.1.2
+- KSP 0.25 support
+
+v1.1.1
+- Fixed misinterpreted controller hat inputs
+
+v1.1
+- Fixed issue with FAR where FAR's dynamic control adjustment would get overridden
+- Fixed trim issues
+- Added wheel throttle and wheel steer
+- Fixed a bug where throttle wouldn't go below 50%
+- Support for controller hats both as axes and buttons (new "Treat hats as buttons" config option)
+- Fixed SDL plug and play
+- Fixed a preset editor bug where if time is slowed down (e.g. by using the TimeScale mod), it was not possible to change bindings
+- General optimization
+- Breaks the configuration XML, you will need to recreate your presets.
+
+v1.0.3
+- Fixed the issues with time warp
+- B9 Aerospace now supported for 32-bit builds
+
+v1.0.2
+- Added negative versions of Yaw, Pitch, Roll, X, Y and Z
+
+v1.0.1 
+- SDL2.dll wasn't always recognized to exist
